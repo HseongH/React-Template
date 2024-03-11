@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
+  overrides: [{ files: ['!vite.config.ts', '!src/stories'] }],
   extends: [
     'airbnb',
     'airbnb/hooks',
@@ -30,7 +31,6 @@ module.exports = {
   plugins: ['react-refresh', '@typescript-eslint'],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
