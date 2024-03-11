@@ -1,7 +1,6 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  overrides: [{ files: ['!vite.config.ts', '!src/stories'] }],
   extends: [
     'airbnb',
     'airbnb/hooks',
