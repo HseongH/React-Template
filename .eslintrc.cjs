@@ -11,7 +11,7 @@ module.exports = {
     'plugin:storybook/recommended',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'src/stories/*'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
