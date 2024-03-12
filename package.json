@@ -23,6 +23,7 @@
     "@mui/material": "^5.15.10",
     "@tanstack/react-query": "^5.26.3",
     "@tanstack/react-table": "^8.13.2",
+    "downshift": "^8.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.0",
