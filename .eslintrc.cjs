@@ -11,7 +11,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:@tanstack/eslint-plugin-query/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'src/stories/*'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'src/stories/*', '*.config.ts'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -20,6 +20,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
   },
   settings: {
     'import/resolver': {
