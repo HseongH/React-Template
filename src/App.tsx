@@ -1,15 +1,16 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { RecoilRoot } from 'recoil';
-
-const queryClient = new QueryClient();
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Card from '@/components/Card';
+import Layout from '@/components/Layout';
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <RecoilRoot>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      </RecoilRoot>
-    </QueryClientProvider>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Card />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
