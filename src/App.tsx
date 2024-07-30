@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Card from '@/components/Card';
 import Layout from '@/components/Layout';
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<Card />} />
+          <Route path="/" element={<h1>Test</h1>} />
         </Routes>
       </Layout>
     </BrowserRouter>
