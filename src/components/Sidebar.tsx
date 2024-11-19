@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
-    <div className="fixed inset-y-0 left-0 w-64 p-5 dark:text-slate-50">
+    <div className="fixed inset-y-0 left-0 w-64 bg-slate-50 p-5 dark:bg-slate-900/30">
       <nav>
         <Link className="flex w-full rounded-md px-3 py-2 hover:bg-black/5 dark:hover:bg-white/5" to="/">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mr-2 size-6">
