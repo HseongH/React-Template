@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
-    <div className="fixed inset-y-0 left-0 w-64 bg-slate-50 p-5 dark:bg-slate-900/30">
+    <div className="fixed inset-y-0 left-0 w-64 border-r border-slate-200 bg-white/60 p-5 dark:border-none dark:bg-slate-700/45">
       <nav>
-        <Link className="flex w-full rounded-md px-3 py-2 hover:bg-black/5 dark:hover:bg-white/5" to="/">
+        <Link className="flex w-full rounded-md px-3 py-2 hover:bg-slate-600/5 dark:hover:bg-white/5" to="/">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mr-2 size-6">
             <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
             <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />

@@ -5,7 +5,11 @@ interface IWidget {
 }
 
 function Widget({ children }: IWidget) {
-  return <div className="rounded-md bg-slate-600/5 p-5 dark:bg-slate-900/30">{children}</div>;
+  return (
+    <div className="rounded-md border border-slate-200 bg-white/60 p-5 dark:border-none dark:bg-slate-700/45">
+      {children}
+    </div>
+  );
 }
 
 export default Widget;
